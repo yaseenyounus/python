@@ -11,7 +11,7 @@ for x in range(100):
 for x in numList:
     if x > max:
         max = x
-
+# Prints the max value of the list
 print(max)
 
 
