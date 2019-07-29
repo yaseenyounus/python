@@ -1,3 +1,5 @@
+# Yaseen Younus
+# 28 July 2019
 # This is a Python program that takes IP addresses as input, and outputs their respective IP whitelisting rule
 # format : SetEnvIF X-Forwarded-For \b35\.62\.96\.52 AllowIP$
 
