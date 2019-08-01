@@ -9,10 +9,10 @@
 import sys 
 
 def redirect_to_internal(path_from, path_to):
-    print("RewriteRule ^{}$ {} [R=301,NC,L]".format(removeRoot(path_from), removeRoot(path_to)))
+    print(f'RewriteRule ^{removeRoot(path_from)}$ {removeRoot(path_to)} [R=301,NC,L]')
 
 def redirect_to_external(path_from, path_to):
-    print("RewriteRule ^{}$ {} [R=301,NC,L]".format(removeRoot(path_from), path_to))
+    print(f'RewriteRule ^{removeRoot(path_from)}$ {path_to} [R=301,NC,L]')
 
 def removeRoot(url):
     if url[:url.find('/') == -1]:
